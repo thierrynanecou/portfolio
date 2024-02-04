@@ -1,0 +1,90 @@
+.cards-container {
+    background-color: black;
+    
+    
+    display: flex;
+    flex-direction: column; /* Aligner les éléments verticalement */
+    
+    margin-left: 20 px;
+}
+
+.logement {
+    display: flex;
+    flex-direction: row; /* Aligner les éléments horizontalement */
+   
+    margin-bottom: 20px;
+    width: 100%; /* Utilisez toute la largeur disponible */
+    color: white;
+}
+
+.logement img {
+    width: 30%; /* Utilisez la moitié de la largeur pour chaque image */
+    height: auto;
+    max-width: 350px;
+}
+
+.logement-info {
+    width: 50%; /* Utilisez la moitié de la largeur pour chaque info */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 10px 10px;
+}
+
+.logement h2 {
+    margin: 0;
+    font-size: 18px;
+}
+.card-link {
+    margin-left: 30px;
+}
+
+
+.github-link img {
+    width: 30px;
+    margin-right: 5px;
+    filter: invert(1);
+}
+
+.github-link a {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .cards-container {
+        padding: 20px;
+        margin-left: 0; /* Correction de la marge gauche */
+    }
+
+    .logement {
+        flex-direction: column; /* Modification de l'alignement des éléments verticalement */
+        align-items: center; /* Centrer les éléments horizontalement */
+    }
+
+    .logement img {
+        width: 70%; /* Réduire la largeur de l'image */
+        margin-bottom: 10px;
+         /* Ajouter de l'espace sous l'image */
+    }
+
+    .logement-info {
+        width: 100%; /* Prendre toute la largeur disponible */
+        border-radius: 0; /* Supprimer le border-radius */
+        padding: 0; /* Supprimer le padding */
+    }
+
+    .logement h2 {
+        font-size: 16px; /* Réduire la taille de la police */
+        text-align: center; /* Centrer le texte */
+        margin-bottom: 10px; /* Ajouter de l'espace en bas du titre */
+    }
+
+    .github-link {
+        justify-content: center; /* Centrer les éléments horizontalement */
+        margin-bottom: 20px;
+         /* Ajouter de l'espace en bas du lien GitHub */
+    }
+}
